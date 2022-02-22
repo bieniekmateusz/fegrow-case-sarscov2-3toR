@@ -12,7 +12,7 @@ for pert in perts:
 	os.system(f"""
 
 	LB={l} ; LE={r} ; 
-	python ~/code/QUBE-SOMD-paper/07_08_FreeEnergy/prepareFEP.py \
+	python prepareFEP.py \
 		--input1 ../lig_2_soleq/l"$LB"_sol.prm7 ../lig_2_soleq/l"$LB"_soleq.rst7 \
 		--input2 ../lig_2_soleq/l"$LE"_sol.prm7 ../lig_2_soleq/l"$LE"_soleq.rst7 \
 		--output l"$LB"-l"$LE" -v
