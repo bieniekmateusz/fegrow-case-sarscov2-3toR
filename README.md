@@ -60,7 +60,7 @@ Install BioSimSpace (https://github.com/michellab/BioSimSpace/)
   - coth the complexes and ligands need to equilibrated
   - create equilibrated rst7 files for the bound and unbound systems (e.g. Lig_sol_eq.rst7 or Complex_sol_eq.rst7): ```amberequilibration.py --input FILE1_to_FILE2_sol.prm7 FILE1_to_FILE2_sol.rst7 --output FILE1_to_FILE2_soleq```
 
-### 08) Free Energy Calculations
+### 7) Free Energy Calculations
 
 1) Create the folder setup:
   - You will need a main folder from which to run the free energy scripts, ```ligand_lambdarun-comb.sh``` and ```complex_lambdarun-comb.sh```, the "pertlist", and where you will also have:
