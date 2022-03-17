@@ -22,12 +22,12 @@ Install BioSimSpace (https://github.com/michellab/BioSimSpace/)
   - this will create unsolvated prm7 and rst7 files
 
 ### 3a) Solvate the ligands:
-  - solvate each of the ligand files with ```solvate.py --input MOL.prm7 MOL.rst7 --output MOL_sol --water tip3p --extent 35``` in the `lig_2_soleq`
-  - `--extent` is the box size used for our system in Angstroms
+  - solvate each of the ligand files with ```solvate.py --input MOL.prm7 MOL.rst7 --output MOL_sol --water tip3p --box_dim 35``` in the `lig_2_soleq`
+  - `--box_dim` is the box size used for our system in Angstroms
   
 ### 3b) Solvate the complex:
   - solvate the prm7 and rst7 files of the complxes: ```solvate.py --input PROT_MOL.prm7 PROT_MOL.rst7 --output PROT_MOL_sol --water tip3p --box_dim 90``` in the `com_1_soleq` directory
-  - `--extent` is the box size used for our system in Angstroms
+  - `--box_dim` is the box size used for our system in Angstroms
 
 ### 4) Equilibrate the solvated systems:
 ```
