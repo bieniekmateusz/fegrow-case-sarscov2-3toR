@@ -17,8 +17,6 @@ Install BioSimSpace (https://github.com/michellab/BioSimSpace/)
 ### 1b) Generate AMBER format forcefield for the ligands (GAFF):
   - Given a molecule in a pdb format in `lig_0_initial_pdb` directory, use ```parameterise.py --input MOL.pdb --forcefield GAFF2 --output MOL```
   - Save each molecule's .rst7 and .prm in `lig_1_params`
-  
-**From here the setup is the same for either force field**
 
 ### 2) Combine each ligand and protein:
   - for each ligand, combine it with the protein: ```combine.py --system1 MOL.prm7 MOL.rst7 --system2 PROTEIN.prm7 PROTEIN.rst7 --output PROT_MOL``` in the `com_0_params` directory
