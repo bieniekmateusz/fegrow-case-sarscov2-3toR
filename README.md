@@ -14,8 +14,8 @@ Install BioSimSpace (https://github.com/michellab/BioSimSpace/)
   - Given the protein in pdb format, use the [parameterise.py](https://github.com/michellab/BioSimSpace/blob/devel/nodes/playground/parameterise.py) script from BioSimSpace to parameterise it with the ff14SB amber forcefield, and generating .rst7 and .prm7 files: ```parameterise.py --input FILE.pdb --forcefield ff14SB --output FILE```
   - save the generated .rst7 and .prm files in the `1.prot_param` directory
 
-### 1b) Convert **QUBE**'s .xml into AMBER format forcefield:
-  - Given a molecule in xml and pdb format in `lig_0_initial_pdb` directory, use [qube_to_prmRst.py](https://github.com/cole-group/QUBE-SOMD-paper/blob/master/qube_to_prmRst.py) to read the xml/pdb files and generate amber files .rst7 and .prm7: ```qube_to_prmRst.py -x mol.xml -p mol.pdb```.
+### 1b) Generate AMBER format forcefield for the ligands (GAFF):
+  - Given a molecule in a pdb format in `lig_0_initial_pdb` directory, use ```parameterise.py --input MOL.pdb --forcefield GAFF2 --output MOL```
   - Save each molecule's .rst7 and .prm in `lig_1_params`
   
 **From here the setup is the same for either force field**
