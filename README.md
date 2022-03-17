@@ -9,8 +9,7 @@ The following details the procedure for protein-ligand binding free energy calcu
 
 Install BioSimSpace (https://github.com/michellab/BioSimSpace/)
 
-### 1a) Generate AMBER format forcefield for the protein:
-  *Parameterise the protein with **AMBER** forcefield:*
+### 1a) Parameterise the protein with **AMBER** forcefield:
   - Given the protein in pdb format, use the [parameterise.py](https://github.com/michellab/BioSimSpace/blob/devel/nodes/playground/parameterise.py) script from BioSimSpace to parameterise it with the ff14SB amber forcefield, and generating .rst7 and .prm7 files: ```parameterise.py --input FILE.pdb --forcefield ff14SB --output FILE```
   - save the generated .rst7 and .prm files in the `1.prot_param` directory
 
